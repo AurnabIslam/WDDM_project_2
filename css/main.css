@@ -4,11 +4,12 @@
     --dark: #333;
     --red: #ff5733;
     --sepia: #d9d375;
+    --newsprint: #ecb159;
     --fs-nav-item: 2rem;
     --fs-article-content: 1.2rem;
     --fs-article-header: 2rem;
 }
-
+/* 
 html, body{
     padding: 0;
     margin: 0;
@@ -54,4 +55,106 @@ html, body{
     padding-left: 4rem;
     padding-right: 4rem;
     text-align: justify;
+} */
+
+
+/*  */
+body,
+html {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  width: 100%;
+  scroll-behavior: smooth;
+}
+
+.section{
+    display: block;
+    padding: 5rem 0;
+    background: var(--sepia);
+}
+.section .article-header{
+    font-size: var(--fs-article-header);
+    color: var(--black);
+    text-align: center;
+}
+.section .article-content{
+    font-size: var(--fs-article-content);
+    color: var(--dark);
+    padding-left: 4rem;
+    padding-right: 4rem;
+    text-align: justify;
+}
+
+.menu {
+  width: 100%;
+  height: 75px;
+  background-color: var(--black);
+  position: fixed;
+  background-color: var(--dark);
+  transition: all 0.3s ease;
+}
+
+.light-menu {
+  width: 100%;
+  height: 75px;
+  background-color: var(--white);
+  position: fixed;
+  background-color: var(--dark);
+  transition: all 0.3s ease;
+}
+
+#menu-center {
+  width: 980px;
+  height: 75px;
+  margin: 0 auto;
+}
+#menu-center ul {
+  margin: 15px 0 0 0;
+}
+#menu-center ul li {
+  list-style: none;
+  margin: 0 30px 0 0;
+  display: inline;
+}
+
+.active {
+  font-family: "Droid Sans", serif;
+  font-size: var(--fs-nav-item);
+  color: var(--red);
+  text-decoration: none;
+  line-height: 50px;
+}
+
+a {
+  font-family: "Droid Sans", serif;
+  font-size: var(--fs-nav-item);
+  color: var(--white);
+  text-decoration: none;
+  line-height: 50px;
+}
+
+#home {
+  background-color: var(--sepia);
+  height: 100%;
+  width: 100%;
+  overflow: hidden;
+}
+
+#portfolio {
+    background-color: var(--newsprint);
+  height: 100%;
+  width: 100%;
+}
+
+#about {
+  background-color: var(--sepia);
+  height: 100%;
+  width: 100%;
+}
+
+#contact {
+  background-color: var(--newsprint);
+  height: 100%;
+  width: 100%;
 }
