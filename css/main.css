@@ -1,14 +1,15 @@
-:root{
-    --white: #fff;
-    --black: #000;
-    --dark: #333;
-    --red: #ff5733;
-    --sepia: #d9d375;
-    --newsprint: #ecb159;
-    --fs-nav-item: 2rem;
-    --fs-article-content: 1.2rem;
-    --fs-article-header: 2rem;
+:root {
+  --white: #fff;
+  --black: #000;
+  --dark: #333;
+  --red: #ff5733;
+  --sepia: #d9d375;
+  --newsprint: #ecb159;
+  --fs-nav-item: 2rem;
+  --fs-article-content: 1.2rem;
+  --fs-article-header: 2rem;
 }
+
 /* 
 html, body{
     padding: 0;
@@ -68,22 +69,24 @@ html {
   scroll-behavior: smooth;
 }
 
-.section{
-    display: block;
-    padding: 5rem 0;
-    background: var(--sepia);
+.section {
+  display: block;
+  padding: 5rem 0;
+  background: var(--sepia);
 }
-.section .article-header{
-    font-size: var(--fs-article-header);
-    color: var(--black);
-    text-align: center;
+
+.section .article-header {
+  font-size: var(--fs-article-header);
+  color: var(--white);
+  text-align: center;
 }
-.section .article-content{
-    font-size: var(--fs-article-content);
-    color: var(--dark);
-    padding-left: 4rem;
-    padding-right: 4rem;
-    text-align: justify;
+
+.section .article-content {
+  font-size: var(--fs-article-content);
+  color: var(--dark);
+  padding-left: 4rem;
+  padding-right: 4rem;
+  text-align: justify;
 }
 
 .menu {
@@ -92,7 +95,7 @@ html {
   background-color: var(--black);
   position: fixed;
   background-color: var(--dark);
-  transition: all 0.3s ease;
+  z-index: 20;
 }
 
 .light-menu {
@@ -101,17 +104,18 @@ html {
   background-color: var(--white);
   position: fixed;
   background-color: var(--dark);
-  transition: all 0.3s ease;
 }
 
 #menu-center {
-  width: 980px;
+  width: 100%;
   height: 75px;
   margin: 0 auto;
 }
+
 #menu-center ul {
   margin: 15px 0 0 0;
 }
+
 #menu-center ul li {
   list-style: none;
   margin: 0 30px 0 0;
@@ -142,7 +146,7 @@ a {
 }
 
 #portfolio {
-    background-color: var(--newsprint);
+  background-color: var(--newsprint);
   height: 100%;
   width: 100%;
 }
@@ -158,3 +162,40 @@ a {
   height: 100%;
   width: 100%;
 }
+
+
+/* Sticky Header */
+.main-container {
+  /* max-width: 600px;
+  margin: 0 auto;
+  border: solid 10px green;
+  padding: 10px;
+  margin-top: 40px; */
+}
+
+.main-container * {
+  /* padding: 10px;
+  background: #aaa;
+  border: dashed 5px #000; */
+}
+
+.main-container *+* {
+  /* margin-top: 20px; */
+}
+
+
+.main-content {
+  /* min-height: 1000px; */
+}
+
+.main-header {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 75px;
+  height: 75px;
+  background: var(--dark);
+  margin-bottom: 5rem;
+}
+
+/* https://medium.com/@elad/css-position-sticky-how-it-really-works-54cd01dc2d46 */
+/* Sticky Header */
