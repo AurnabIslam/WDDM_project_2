@@ -6,7 +6,7 @@
   --sepia: #d9d375;
   --newsprint: #ecb159;
   --fs-nav-item: 2rem;
-  --fs-article-content: 1.2rem;
+  --fs-article-content: 1.5rem;
   --fs-article-header: 2rem;
   --ff-content: 'Roboto', sans-serif;
 }
@@ -108,8 +108,9 @@ html {
 
 .section .article-header {
   font-size: var(--fs-article-header);
-  color: var(--white);
+  color: var(--black);
   text-align: center;
+  text-decoration: underline;
 }
 
 .section .article-content {
@@ -120,6 +121,12 @@ html {
   width: 60%;
   margin-left: 20%;
   text-align: justify;
+}
+
+.breakline{
+  width: 80%;
+  margin-top: 20%;
+  border-bottom: 1px solid var(--dark);
 }
 
 .menu {
@@ -171,42 +178,42 @@ a {
 
 #home, #portfolio, #about, #contact {
   background-color: var(--white);
-  height: 100%;
+  height: auto;
   width: 100%;
   /* overflow: hidden; */
 }
 
 
 /* Sticky Header */
-.main-container {
-  /* max-width: 600px;
+/* .main-container {
+  max-width: 600px;
   margin: 0 auto;
   border: solid 10px green;
   padding: 10px;
-  margin-top: 40px; */
+  margin-top: 40px;
 }
 
 .main-container * {
-  /* padding: 10px;
+  padding: 10px;
   background: #aaa;
-  border: dashed 5px #000; */
+  border: dashed 5px #000;
 }
 
 .main-container *+* {
-  /* margin-top: 20px; */
+  margin-top: 20px;
 }
 
 
 .main-content {
-  /* min-height: 1000px; */
-}
+  min-height: 1000px;
+} */
 
 .main-header {
   position: -webkit-sticky;
   position: sticky;
   top: 75px;
   height: 75px;
-  background: var(--dark);
+  background: var(--white);
   margin-bottom: 5rem;
 }
 
